@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ekkkkki.github.io/LLM-Replace-Annotators-in-Biomedical-Text-Mining/sitemap.xml

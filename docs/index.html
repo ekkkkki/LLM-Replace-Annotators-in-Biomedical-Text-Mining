@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Frontier LLMs for Biomedical Text Mining Annotation</title>
+    <meta name="description" content="Project page for Can Frontier LLMs Replace Annotators in Biomedical Text Mining? Datasets, prompts, scripts, failure modes, guideline-aware prompting, two-step inference, and distillation.">
+    <meta name="keywords" content="biomedical text mining, biomedical NLP, large language models, LLM annotation, data annotation, named entity recognition, relation extraction, instruction retrieval, prompt engineering, synthetic data, model distillation">
+    <link rel="canonical" href="https://ekkkkki.github.io/LLM-Replace-Annotators-in-Biomedical-Text-Mining/">
+    <meta name="citation_title" content="Can Frontier LLMs Replace Annotators in Biomedical Text Mining? Analyzing Challenges and Exploring Solutions">
+    <meta name="citation_author" content="Zhao, Yichong">
+    <meta name="citation_author" content="Goto, Susumu">
+    <meta name="citation_publication_date" content="2025/03/05">
+    <meta name="citation_online_date" content="2025/03/05">
+    <meta name="citation_arxiv_id" content="2503.03261">
+    <meta name="citation_doi" content="10.48550/arXiv.2503.03261">
+    <meta name="citation_pdf_url" content="https://arxiv.org/pdf/2503.03261">
+    <meta name="citation_abstract_html_url" content="https://arxiv.org/abs/2503.03261">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Frontier LLMs for Biomedical Text Mining Annotation">
+    <meta property="og:description" content="Guideline-aware prompting, two-step inference, and synthetic-data distillation for biomedical text-mining annotation.">
+    <meta property="og:url" content="https://ekkkkki.github.io/LLM-Replace-Annotators-in-Biomedical-Text-Mining/">
+    <meta property="og:image" content="https://ekkkkki.github.io/LLM-Replace-Annotators-in-Biomedical-Text-Mining/assets/workflow.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Frontier LLMs for Biomedical Text Mining Annotation">
+    <meta name="twitter:description" content="Project page for evaluating frontier LLMs as biomedical text-mining annotators.">
+    <meta name="twitter:image" content="https://ekkkkki.github.io/LLM-Replace-Annotators-in-Biomedical-Text-Mining/assets/workflow.svg">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "ScholarlyArticle",
+            "@id": "https://doi.org/10.48550/arXiv.2503.03261",
+            "headline": "Can Frontier LLMs Replace Annotators in Biomedical Text Mining? Analyzing Challenges and Exploring Solutions",
+            "description": "A study of whether frontier large language models can partially replace manual annotation in biomedical text mining, focusing on failure modes, guideline-aware prompting, two-step inference, and model distillation.",
+            "author": [
+              {"@type": "Person", "name": "Yichong Zhao"},
+              {"@type": "Person", "name": "Susumu Goto"}
+            ],
+            "datePublished": "2025-03-05",
+            "dateModified": "2025-05-17",
+            "identifier": ["arXiv:2503.03261", "doi:10.48550/arXiv.2503.03261"],
+            "url": "https://arxiv.org/abs/2503.03261",
+            "sameAs": [
+              "https://doi.org/10.48550/arXiv.2503.03261",
+              "https://github.com/ekkkkki/LLM-Replace-Annotators-in-Biomedical-Text-Mining"
+            ],
+            "isAccessibleForFree": true,
+            "license": "https://creativecommons.org/licenses/by/4.0/",
+            "keywords": ["biomedical text mining", "biomedical NLP", "large language models", "LLM annotation", "instruction retrieval", "prompt engineering", "model distillation"]
+          },
+          {
+            "@type": "SoftwareSourceCode",
+            "@id": "https://github.com/ekkkkki/LLM-Replace-Annotators-in-Biomedical-Text-Mining",
+            "name": "LLM-Replace-Annotators-in-Biomedical-Text-Mining",
+            "description": "Prompts, datasets, and scripts for evaluating frontier LLMs as biomedical text-mining annotators.",
+            "codeRepository": "https://github.com/ekkkkki/LLM-Replace-Annotators-in-Biomedical-Text-Mining",
+            "programmingLanguage": "Python",
+            "runtimePlatform": "Python",
+            "isPartOf": {"@id": "https://doi.org/10.48550/arXiv.2503.03261"}
+          },
+          {
+            "@type": "Dataset",
+            "@id": "https://github.com/ekkkkki/LLM-Replace-Annotators-in-Biomedical-Text-Mining/tree/main/dataset",
+            "name": "Biomedical text-mining annotation datasets for LLM annotator evaluation",
+            "description": "Archived task datasets used for named entity recognition, relation extraction, and multi-label text classification experiments.",
+            "includedInDataCatalog": {"@type": "DataCatalog", "name": "GitHub"}
+          }
+        ]
+      }
+    </script>
+    <style>
+      :root {
+        --ink: #182231;
+        --muted: #5c6676;
+        --line: #d9dee8;
+        --paper: #ffffff;
+        --wash: #f6f7fb;
+        --blue: #3658a8;
+        --teal: #0f766e;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--wash);
+        color: var(--ink);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.6;
+      }
+      a { color: var(--blue); text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      .shell { width: min(1120px, calc(100% - 40px)); margin: 0 auto; }
+      header { background: var(--paper); border-bottom: 1px solid var(--line); }
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        min-height: 68px;
+      }
+      .brand { font-size: 15px; font-weight: 700; color: var(--ink); }
+      .links { display: flex; flex-wrap: wrap; gap: 14px; font-size: 14px; }
+      .hero {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(320px, 460px);
+        gap: 42px;
+        align-items: center;
+        padding: 68px 0 54px;
+      }
+      h1 {
+        max-width: 820px;
+        margin: 0;
+        font-size: clamp(34px, 5vw, 64px);
+        line-height: 1.02;
+        letter-spacing: 0;
+      }
+      .subtitle {
+        max-width: 760px;
+        margin: 22px 0 0;
+        font-size: 20px;
+        color: var(--muted);
+      }
+      .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+      .button {
+        display: inline-flex;
+        align-items: center;
+        min-height: 42px;
+        padding: 9px 14px;
+        border: 1px solid var(--line);
+        background: var(--ink);
+        color: #ffffff;
+        border-radius: 6px;
+        font-weight: 700;
+        font-size: 14px;
+      }
+      .button.secondary { background: var(--paper); color: var(--ink); }
+      .visual {
+        width: 100%;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--paper);
+        box-shadow: 0 16px 40px rgba(23, 32, 48, 0.08);
+      }
+      section { padding: 46px 0; border-top: 1px solid var(--line); }
+      h2 { margin: 0 0 18px; font-size: 30px; line-height: 1.15; letter-spacing: 0; }
+      h3 { margin: 0 0 10px; font-size: 19px; letter-spacing: 0; }
+      .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+      .item { background: var(--paper); border: 1px solid var(--line); border-radius: 8px; padding: 18px; }
+      .item p, .qa p { margin: 0; color: var(--muted); }
+      .tag { display: inline-flex; margin-bottom: 12px; font-size: 12px; font-weight: 800; color: var(--teal); text-transform: uppercase; }
+      .wide { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: 26px; align-items: start; }
+      table { width: 100%; border-collapse: collapse; background: var(--paper); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+      th, td { padding: 14px 16px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+      th { background: #eef2f6; font-size: 13px; text-transform: uppercase; color: #3d4654; }
+      tr:last-child td { border-bottom: 0; }
+      .qa { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+      footer { padding: 32px 0 46px; color: var(--muted); font-size: 14px; }
+      @media (max-width: 840px) {
+        .hero, .wide, .grid, .qa { grid-template-columns: 1fr; }
+        nav { align-items: flex-start; flex-direction: column; padding: 16px 0; }
+        .hero { padding-top: 42px; }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="shell" aria-label="Primary navigation">
+        <a class="brand" href="#">LLMs as Biomedical Annotators</a>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2503.03261">Paper</a>
+          <a href="https://arxiv.org/pdf/2503.03261">PDF</a>
+          <a href="https://github.com/ekkkkki/LLM-Replace-Annotators-in-Biomedical-Text-Mining">GitHub</a>
+          <a href="https://doi.org/10.48550/arXiv.2503.03261">DOI</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="shell hero">
+        <div>
+          <h1>Frontier LLMs for biomedical text-mining annotation</h1>
+          <p class="subtitle">A guideline-aware evaluation of whether large language models can partially replace manual annotators across biomedical named entity recognition, relation extraction, and multi-label text classification.</p>
+          <div class="actions">
+            <a class="button" href="https://arxiv.org/abs/2503.03261">Read the paper</a>
+            <a class="button secondary" href="https://github.com/ekkkkki/LLM-Replace-Annotators-in-Biomedical-Text-Mining">Use the repository</a>
+          </div>
+        </div>
+        <img class="visual" src="assets/workflow.svg" alt="Workflow for guideline-aware LLM biomedical annotation">
+      </div>
+      <section>
+        <div class="shell grid">
+          <article class="item">
+            <span class="tag">Problem</span>
+            <h3>LLMs miss annotation nuance</h3>
+            <p>Biomedical datasets contain corpus-specific boundary, hierarchy, relation, and label rules that are difficult to infer from general biomedical knowledge alone.</p>
+          </article>
+          <article class="item">
+            <span class="tag">Method</span>
+            <h3>Retrieve guideline instructions</h3>
+            <p>The pipeline dynamically extracts relevant instructions from annotation guidelines and injects them into the task context.</p>
+          </article>
+          <article class="item">
+            <span class="tag">Deployment</span>
+            <h3>Distill synthetic annotations</h3>
+            <p>LLM-generated labels can train smaller BERT-based models, making LLM-assisted annotation more practical for production settings.</p>
+          </article>
+        </div>
+      </section>
+      <section>
+        <div class="shell wide">
+          <div>
+            <h2>Core Findings</h2>
+            <p>The study argues that replacement is possible only in a partial, workflow-aware sense. The strongest setup combines structured prompting, separate reasoning and formatting steps, and task-specific guideline retrieval.</p>
+          </div>
+          <div class="grid">
+            <article class="item"><h3>Failure patterns</h3><p>LLMs struggle with implicit dataset rules, output schemas, and guideline adherence.</p></article>
+            <article class="item"><h3>Prompting strategy</h3><p>Two-step inference preserves reasoning before converting answers into strict formats.</p></article>
+            <article class="item"><h3>Practical path</h3><p>Human annotation can shift toward auditing, calibration, and guideline refinement.</p></article>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="shell">
+          <h2>Tasks and Datasets</h2>
+          <table>
+            <thead><tr><th>Task</th><th>Datasets</th><th>Repository assets</th></tr></thead>
+            <tbody>
+              <tr><td>Named entity recognition</td><td>BC5CDR-Chemical, BC5CDR-Disease, NCBI-Disease</td><td><code>dataset/</code>, <code>prompt/BC5CDR-NER.py</code>, <code>prompt/NCBI-Disease.py</code></td></tr>
+              <tr><td>Relation extraction</td><td>BC5CDR relation extraction, BioRED</td><td><code>prompt/BC5CDR-RE.py</code>, <code>prompt/BioRED.py</code></td></tr>
+              <tr><td>Multi-label text classification</td><td>LitCovid, Hallmarks of Cancer</td><td><code>prompt/LitCovid.py</code>, <code>prompt/HoC.py</code>, evaluation scripts</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section>
+        <div class="shell">
+          <h2>Questions AI Search Should Answer</h2>
+          <div class="qa">
+            <article class="item"><h3>Can frontier LLMs replace biomedical annotators?</h3><p>Partially. The paper supports LLM-assisted annotation workflows rather than unconditional replacement, especially when guideline retrieval and schema checks are used.</p></article>
+            <article class="item"><h3>Why do annotation guidelines matter?</h3><p>They encode dataset-specific rules that cannot be recovered reliably from general biomedical knowledge or a few examples.</p></article>
+            <article class="item"><h3>What is two-step inference?</h3><p>The model first reasons about the annotation decision, then separately formats the answer into the required schema.</p></article>
+            <article class="item"><h3>Why distill into BERT?</h3><p>Distillation tests whether expensive frontier LLM annotation can produce synthetic data for smaller, deployable biomedical models.</p></article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="shell">
+        <p><strong>Citation:</strong> Zhao, Y. and Goto, S. Can Frontier LLMs Replace Annotators in Biomedical Text Mining? Analyzing Challenges and Exploring Solutions. arXiv:2503.03261, 2025.</p>
+      </div>
+    </footer>
+  </body>
+</html>

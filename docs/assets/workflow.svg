@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Guideline-aware LLM biomedical annotation workflow</title>
+  <desc id="desc">A workflow connecting biomedical corpora, annotation guidelines, instruction retrieval, two-step inference, structured labels, and distillation.</desc>
+  <rect width="1200" height="630" fill="#f7f8fb"/>
+  <rect x="56" y="58" width="1088" height="514" rx="22" fill="#ffffff" stroke="#d9dee8"/>
+  <text x="96" y="118" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#1a2433">Frontier LLMs for Biomedical Text Mining Annotation</text>
+  <text x="96" y="154" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#526070">Reasoning, guideline retrieval, schema alignment, and synthetic-data distillation</text>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="92" y="228" width="180" height="102" rx="12" fill="#e8f4f1" stroke="#77b7aa"/>
+    <text x="120" y="270" font-size="18" font-weight="700" fill="#143b36">Biomedical</text>
+    <text x="120" y="296" font-size="18" font-weight="700" fill="#143b36">corpora</text>
+    <rect x="92" y="374" width="180" height="102" rx="12" fill="#f3eee4" stroke="#c7aa6a"/>
+    <text x="120" y="416" font-size="18" font-weight="700" fill="#514018">Annotation</text>
+    <text x="120" y="442" font-size="18" font-weight="700" fill="#514018">guidelines</text>
+    <rect x="348" y="300" width="198" height="110" rx="12" fill="#edf1fb" stroke="#8296d6"/>
+    <text x="382" y="344" font-size="18" font-weight="700" fill="#25386f">Instruction</text>
+    <text x="382" y="370" font-size="18" font-weight="700" fill="#25386f">retrieval</text>
+    <rect x="622" y="300" width="198" height="110" rx="12" fill="#f7ebef" stroke="#cf8ea0"/>
+    <text x="654" y="344" font-size="18" font-weight="700" fill="#6d2638">Two-step</text>
+    <text x="654" y="370" font-size="18" font-weight="700" fill="#6d2638">inference</text>
+    <rect x="896" y="228" width="198" height="102" rx="12" fill="#e9f2fb" stroke="#83afd4"/>
+    <text x="926" y="270" font-size="18" font-weight="700" fill="#234762">Structured</text>
+    <text x="926" y="296" font-size="18" font-weight="700" fill="#234762">annotations</text>
+    <rect x="896" y="374" width="198" height="102" rx="12" fill="#eef5e9" stroke="#8fbf76"/>
+    <text x="926" y="416" font-size="18" font-weight="700" fill="#315625">BERT</text>
+    <text x="926" y="442" font-size="18" font-weight="700" fill="#315625">distillation</text>
+    <path d="M272 279 L340 334" stroke="#6c7584" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+    <path d="M272 425 L340 376" stroke="#6c7584" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+    <path d="M546 355 L614 355" stroke="#6c7584" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+    <path d="M820 338 L888 290" stroke="#6c7584" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+    <path d="M820 372 L888 420" stroke="#6c7584" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+  </g>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#6c7584"/>
+    </marker>
+  </defs>
+</svg>
