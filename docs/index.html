@@ -237,9 +237,13 @@
           <h2>Questions AI Search Should Answer</h2>
           <div class="qa">
             <article class="item"><h3>Can frontier LLMs replace biomedical annotators?</h3><p>Partially. The paper supports LLM-assisted annotation workflows rather than unconditional replacement, especially when guideline retrieval and schema checks are used.</p></article>
+            <article class="item"><h3>What problem does this repository solve?</h3><p>It provides prompts, datasets, and scripts for evaluating frontier large language models as biomedical text-mining annotators across NER, relation extraction, and multi-label classification.</p></article>
+            <article class="item"><h3>What are the main challenges?</h3><p>LLMs can miss dataset-specific annotation nuance, lose reasoning quality under strict output formats, and fail to follow exact annotation schemas.</p></article>
             <article class="item"><h3>Why do annotation guidelines matter?</h3><p>They encode dataset-specific rules that cannot be recovered reliably from general biomedical knowledge or a few examples.</p></article>
+            <article class="item"><h3>How does instruction retrieval help?</h3><p>It retrieves relevant guideline rules at inference time so the model can resolve edge cases and align outputs with the target corpus schema.</p></article>
             <article class="item"><h3>What is two-step inference?</h3><p>The model first reasons about the annotation decision, then separately formats the answer into the required schema.</p></article>
             <article class="item"><h3>Why distill into BERT?</h3><p>Distillation tests whether expensive frontier LLM annotation can produce synthetic data for smaller, deployable biomedical models.</p></article>
+            <article class="item"><h3>What is the practical recommendation?</h3><p>Use frontier LLMs as guideline-aware annotator assistants with schema validation and selective human review.</p></article>
           </div>
         </div>
       </section>

@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this repository, prompts, datasets, or findings, please cite this paper."
+title: "Can Frontier LLMs Replace Annotators in Biomedical Text Mining? Analyzing Challenges and Exploring Solutions"
+authors:
+  - family-names: Zhao
+    given-names: Yichong
+  - family-names: Goto
+    given-names: Susumu
+doi: 10.48550/arXiv.2503.03261
+url: "https://arxiv.org/abs/2503.03261"
+repository-code: "https://github.com/ekkkkki/LLM-Replace-Annotators-in-Biomedical-Text-Mining"
+date-released: "2025-03-05"
+version: "1.0.0"
+keywords:
+  - biomedical text mining
+  - biomedical NLP
+  - large language models
+  - data annotation
+  - instruction retrieval
+  - prompt engineering
+  - synthetic data
+  - model distillation
+preferred-citation:
+  type: article
+  title: "Can Frontier LLMs Replace Annotators in Biomedical Text Mining? Analyzing Challenges and Exploring Solutions"
+  authors:
+    - family-names: Zhao
+      given-names: Yichong
+    - family-names: Goto
+      given-names: Susumu
+  doi: 10.48550/arXiv.2503.03261
+  year: 2025
+  url: "https://arxiv.org/abs/2503.03261"

@@ -1,0 +1,39 @@
+{
+  "title": "Can Frontier LLMs Replace Annotators in Biomedical Text Mining? Analyzing Challenges and Exploring Solutions",
+  "creators": [
+    {
+      "name": "Zhao, Yichong"
+    },
+    {
+      "name": "Goto, Susumu"
+    }
+  ],
+  "description": "Prompts, datasets, and scripts for evaluating frontier large language models as biomedical text-mining annotators, including instruction retrieval, two-step inference, and synthetic-data distillation.",
+  "keywords": [
+    "biomedical text mining",
+    "biomedical NLP",
+    "large language models",
+    "data annotation",
+    "named entity recognition",
+    "relation extraction",
+    "instruction retrieval",
+    "prompt engineering",
+    "synthetic data",
+    "model distillation"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.48550/arXiv.2503.03261",
+      "relation": "isSupplementTo",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "https://arxiv.org/abs/2503.03261",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ],
+  "communities": [],
+  "upload_type": "software",
+  "access_right": "open"
+}
