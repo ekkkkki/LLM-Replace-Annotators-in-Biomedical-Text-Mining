@@ -25,6 +25,8 @@ If you use this repository, prompts, datasets, or findings, please cite the pape
 }
 ```
 
+**First author:** [Yichong Zhao / Eric Zhao](https://ekkkkki.github.io/) — AI engineer at Preferred Networks.
+
 Machine-readable citation metadata is available in [`CITATION.cff`](CITATION.cff). Release metadata for Zenodo archiving is available in [`.zenodo.json`](.zenodo.json).
 
 ## Highlights

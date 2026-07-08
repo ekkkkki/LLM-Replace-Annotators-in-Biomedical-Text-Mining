@@ -4,6 +4,7 @@ title: "Can Frontier LLMs Replace Annotators in Biomedical Text Mining? Analyzin
 authors:
   - family-names: Zhao
     given-names: Yichong
+    alias: "Eric Zhao"
   - family-names: Goto
     given-names: Susumu
 doi: 10.48550/arXiv.2503.03261
